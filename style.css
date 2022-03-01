@@ -54,19 +54,22 @@ button {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    margin-right: 24px;
 }
 
 /* contains hero container and image */
 .intro {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 }
 
 /* contains title, description, hero button */
 /* decided to do a center vertical align so that it will look more balanced at different viewport widths rather than having big gaps between the container items when the viewport is wide */
 .container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     gap: 24px;
@@ -77,18 +80,22 @@ button {
     color: #e5e7eb;
 }
 
-.heroimage img {
-    max-width: 500px;
-}
-
 .herobutton button {
     background-color: #3882F6;
     color: #e5e7eb;
+    margin-bottom: 36px
+}
+
+.heroimage img {
+    max-width: 100%;
+    flex: 1;
+/* OMG LOL FINALLY MANAGED TO MAKE IT WORK for small screens!! */
+/* resized hero img to 500px, then set max-width to 100% so that it can shrink if viewport is too small. then added flex: 1 to .container and .heroimage img so that they can shrink too */
 }
 
 .content {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 48px;
     margin-bottom: 60px;
 }
 
@@ -115,7 +122,7 @@ button {
 
 .quote {
     background-color: #E5E7EB;
-    padding: 60px 25%;
+    padding: 48px 25%;
 }
 
 .text {
