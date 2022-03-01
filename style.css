@@ -25,6 +25,10 @@ a {
     color: #e5e7eb;
 }
 
+a:hover {
+    color: hotpink;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -84,6 +88,10 @@ button {
     background-color: #3882F6;
     color: #e5e7eb;
     margin-bottom: 36px
+}
+
+.herobutton:hover button {
+    color: hotpink;
 }
 
 .heroimage img {
