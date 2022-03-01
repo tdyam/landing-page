@@ -97,6 +97,7 @@ button {
     text-align: center;
     margin-top: 48px;
     margin-bottom: 60px;
+    padding: 0 12px 0 12px;
 }
 
 .itemcontainer {
