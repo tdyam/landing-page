@@ -11,6 +11,13 @@ h1 {
     font-weight: extra-bold;
     color: #F9FAF8;
     margin: 0;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
 }
 
 a {
@@ -49,17 +56,21 @@ button {
     color: #F9FAF8;
 }
 
+/* contains hero container and image */
 .intro {
     display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
+/* contains title, description, hero button */
+/* decided to do a center vertical align so that it will look more balanced at different viewport widths rather than having big gaps between the container items when the viewport is wide */
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-right: 24px;
+    justify-content: center;
+    gap: 24px;
+    margin-right: 48px;
 }
 
 .description {
@@ -67,12 +78,51 @@ button {
 }
 
 .heroimage img {
-    width: 500px;
-    height: 250px;
-    object-fit: cover;
+    max-width: 500px;
 }
 
 .herobutton button {
     background-color: #3882F6;
     color: #e5e7eb;
+}
+
+.content {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.itemcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-top: 48px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+/* this prevents the image from stretching */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.caption {
+    max-width: 200px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 60px 25%;
+}
+
+.text {
+    font-style: italic;
+}
+
+.source {
+    text-align: right;
+    font-weight: bold;
 }
