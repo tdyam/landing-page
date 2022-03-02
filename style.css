@@ -20,7 +20,14 @@ h2 {
     color: #1f2937;
 }
 
-a {
+h3 {
+    font-size: 24px;
+    font-weight: extra-bold;
+    color: #e5e7eb;
+    margin-bottom: -18px;
+}
+
+a, .description, .copyright {
     text-decoration: none;
     color: #e5e7eb;
 }
@@ -64,15 +71,18 @@ button {
 }
 
 /* contains hero container and image */
+/* added justify-content to center items on big screens */ 
 .intro {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 60px;
     margin-bottom: 48px;
 }
 
 /* contains title, description, hero button */
 /* decided to do a center vertical align so that it will look more balanced at different viewport widths rather than having big gaps between the container items when the viewport is wide */
+/* added max-width to prevent description from becoming too wide on bigger screens */
 .container {
     display: flex;
     flex: 1;
@@ -80,10 +90,7 @@ button {
     justify-content: center;
     gap: 24px;
     margin-right: 48px;
-}
-
-.description {
-    color: #e5e7eb;
+    max-width: 500px;
 }
 
 .herobutton button {
@@ -138,9 +145,43 @@ button {
 
 .text {
     font-style: italic;
+    font-size: 24px;
 }
 
 .source {
     text-align: right;
     font-weight: bold;
+}
+
+.signup {
+    padding: 60px 20%;
+    color: #E5E7EB;
+    max-width: 900px;
+    margin: auto;
+}
+
+.signupcontainer {
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 12px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signupbutton button {
+    border: 1px solid #E5E7EB;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    margin-left: 48px;
+}
+
+.signupbutton:hover button {
+    color: hotpink;
+}
+
+.footer {
+    background-color: #1f2937;
+    padding: 24px;
+    text-align: center;
 }
